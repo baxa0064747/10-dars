@@ -1,0 +1,23 @@
+.site-main__some {
+  background-color: #004047;
+}
+
+.some__inner {
+  padding: 140px 0 151px 0;
+}
+
+.some__title {
+  width: 932px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.some__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=some.css.map */

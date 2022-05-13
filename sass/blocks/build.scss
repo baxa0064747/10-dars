@@ -1,0 +1,116 @@
+.site-main__build {
+    margin: 0;
+    background-color: #012F34;
+}
+.site-main__buld::before {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 244px;
+    left: calc(50% + 200px);
+    background-image: url(../../img/build-left-img.png);
+    background-repeat: no-repeat;
+    background-size: 200px 244px;
+    content: "";
+}
+
+.build__inner {
+    padding: 198px 0 140px 0;
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.build__title {
+    margin: 0;
+    width: 445px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+
+    &::before {
+        display: block;
+        position: relative;
+        bottom: 79px;
+        width: 50px;
+        height: 4px;
+        background-color: #F67E7E;
+        content: "";
+    }
+}
+.build__list {
+    @include list-global;
+    margin-left: auto;
+}
+
+.item__title {
+    width: 445px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+}
+
+.item__text {
+    width: 445px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.build__item + .build__item {
+    margin-top: 32px;
+}
+
+.build__item:nth-child(1) {
+    &::before {
+        position: absolute;
+        // top: 0;
+        left: calc(50%);
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url(../../img/build-left1.svg);
+        background-repeat: no-repeat;
+        background-size: 72px 72px;
+        content: "";
+    }
+}
+
+.build__item:nth-child(2) {
+    &::before {
+        position: absolute;
+        // top: 0;
+        left: calc(50%);
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url(../../img/build-left2.svg);
+        background-repeat: no-repeat;
+        background-size: 72px 72px;
+        content: "";
+    }
+}
+
+.build__item:nth-child(3) {
+    &::before {
+        position: absolute;
+        // top: 0;
+        left: calc(50%);
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url(../../img/build-left3.svg);
+        background-repeat: no-repeat;
+        background-size: 72px 72px;
+        content: "";
+    }
+}
+
+
+

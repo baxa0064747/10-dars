@@ -1,0 +1,125 @@
+.site-main__hero {
+    margin: 0;
+    background-image: url(../../img/img-left.png),url(../../img/img-bottom.svg);
+    background-color: #014e56;
+    background-repeat: no-repeat;
+    background-size: 200px, 290px;
+    background-position: calc(50% - 770px) calc(50% - 75px),
+    calc(50% + 400px) calc(100%);
+}
+
+.hero__inner{
+    padding: 60px 0 250px 0;
+    display: flex;
+    align-items:flex-end;
+}
+
+
+.hero__title {
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+    width: 100%;
+    max-width:635px;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FFFFFF;
+    
+}
+.hero__text {
+    margin: 0;
+    width: 100%;
+    max-width: 445px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    &::before {
+        display: block;
+        position: relative;
+        bottom: 79px;
+        width: 50px;
+        height: 4px;
+        background-color: #79c8c7;
+        content: "";
+    }
+}
+@include max-width(883px){
+    .site-main__hero {
+        background-image: url(../../img/img-bottom.svg);
+      
+    }
+
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hero__text::before {
+        display: none;
+        text-align: center;
+    }
+
+    .hero__title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__text {
+        padding-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .site-main__hero {
+        background-image: url(../../img/img-bottom.svg);
+        // margin-left: auto;
+        // margin-right: auto;
+        bottom: 0;
+        left: 0;
+        top: 0;
+    }
+    @include max-width(768px){
+        .hero__inner {
+            padding: 48px 0 156px 0;
+        }
+        .hero__title {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 56px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .hero__text {
+            padding-bottom: 24px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+        }
+    }
+    @include max-width(576px){
+        .hero__inner {
+            padding: 48px 24px 197px 24px;
+        }
+        .hero__title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .hero__text {
+            padding-bottom: 18px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    
+
+}
